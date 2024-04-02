@@ -1,0 +1,697 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+section {
+    display: block;
+}
+a {
+    cursor: pointer;
+}
+.container {
+    max-width: 100%; 
+}
+.main__video {
+    position: relative;
+}
+#my__video {
+    
+    max-height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+.main-nav {
+    display: flex;
+    position: fixed;
+    min-height: 80px;
+    top: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all 0.5s ease 0s;
+    box-sizing: border-box;
+}
+.logo {
+    color: white;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 80px;
+    transition: all 0.3s ease 0s;
+}
+.logo span {
+    color: tomato;
+    font-style: normal;
+    font-weight: 900;
+}
+.nav {
+    display: flex;
+    margin-left: 250px;
+}
+#active {
+    color: tomato;
+}
+.nav a {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+.nav a:hover {
+    transition: 2s;
+    color: tomato
+}
+.btn__1 {
+    color: white;
+    background-color: tomato;
+    padding: 11px 17px;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 70px;
+}
+.text1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 37%;
+    left: 32%;
+}
+.H4 {
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.H1 {
+    color: white;
+    font-weight: 800;
+    font-size: 64px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.about_header {
+    width: 100%;
+    padding-left: 30%;
+    padding-right: 30%;    
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2 {
+    margin-top: 50px;
+    margin-bottom: 12px;
+}
+.ch_icon{
+    margin: 20px 0px;
+}
+.content-wrapper {
+    margin: 30px;
+    width: 300px;
+}
+.content-text {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+.btn__3 {
+    border: none;
+    color: tomato;
+    cursor: pointer;
+    background-color: transparent;
+}
+.left-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 80px;
+}
+.row_1 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+}
+/* .................................. */
+        /* About starts */
+/* .................................. */
+#about {
+    max-width: 100%; 
+    max-height: 100%;  
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about_wrapper{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    margin-bottom: 50px;
+}
+.items{
+display: flex;
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+}
+.left-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.about-2{
+    background: url(./assets/cta-bg.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    top: 20%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.about-2-title{
+    margin-top: 120px;
+    color: white;
+}
+.about-2-content{
+    line-height: 12px;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+.btn__2 {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: tomato;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    transition: all 0.3s ease 0s;
+}
+#classes {
+    max-width: 100vw;
+    max-height: 100%;    
+}
+/* Slider */
+.slider{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+.slides{
+    display: flex;
+    width: 800%;
+    height: 100%;
+    margin-left: auto;
+}
+.slide{
+    width: 20%;
+    transition: 0.01s;
+}           
+.slide img{
+    width: 700px;
+    border-radius: 7px;
+    margin-top: 60px;
+}
+.slides input[type=radio]{
+    display: none;
+}
+.navigation_manual{
+    position: absolute;    
+    width: 500px;
+    margin-top: 40px;
+}
+.first{
+    position: relative;
+    left: 520px;
+    margin-left: 0;
+}
+.first2{
+    position: relative;
+    left: 520px;
+}
+.first3{
+    position: relative;
+    left: 520px;
+}
+.first4{
+    position: relative;
+    left: 520px;
+    font-family: sans-serif;    
+}
+.manual_btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual_btn:hover{
+    background-color: blue;
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+.FTC_text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #232d39;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+.TC_text {
+margin-bottom: 10px;
+}
+.training_class{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    margin-left: 100px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px;
+    transition: all;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
+.ft_class{
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-size: 19px;
+    margin-left: 25px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.ft_class:hover {
+    color: tomato;
+}
+.ft_icon{
+    margin-left: 10px;
+}
+.btn6 {
+    color: white;
+    background-color: tomato;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.btn5{
+    display: flex;
+    width: 350px;
+    margin-left: 100px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;   
+    background-color: tomato;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    justify-content: center;
+}
+/* ..............................
+        Schedule Start
+.............................. */
+#schedule {
+    max-width: 100vw;
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/schedule-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+}
+.schedule-container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.col {
+    position: relative;
+    width: 100%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.schedule-header {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.schedule-header h2 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+span {
+    color: tomato;
+}
+.schedule-header img {
+    margin: 20px auto;
+}
+.schedule-header p {
+    color: #fff;
+} 
+.filters {
+    margin-bottom: 40px;
+}
+.filters ul {
+    margin-bottom: 0px;
+    padding: 0;
+    text-align: center;
+}
+.filters ul li {
+    display: inline;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+#schedule .active {
+    color: tomato;
+}
+.filters ul li::after {
+    content: "/";
+    margin-left: 10px;
+    color: #fff;
+}
+.col-3 {
+    position: relative;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10%;
+    
+}
+#schedule table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #fff;
+}
+table {
+    border-collapse: collapse;
+}
+#schedule table tbody {
+    border-top: 1px solid #fff;
+}
+#schedule table tbody tr {
+    border-bottom: 1px solid #fff;
+}
+#schedule table tbody tr td {
+    border-right: 1px solid #fff;
+    height: 100px;
+}
+#schedule table tr td {
+    color: #fff;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.schedule-table .filtering .ts-item.show {
+    opacity: 1;
+    transition: all 0.5s;
+}
+.schedule-table .filtering .ts-item {
+    opacity: 1;
+    transition: all 0.5s;
+}
+/* ...........................
+    Schedule End
+........................... */
+/* ...........................
+    Trainer Start
+........................... */
+
+section{
+    display: block;
+}
+::selection {
+    color: rgb(255, 255, 255);
+    background: tomato;
+}
+#trainers {
+    max-width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.trainers-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.trainers-heading {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+ .trainers-heading h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: rgb(35, 45, 57);
+    letter-spacing: 0.5;
+    margin-top: 0px;
+    margin-bottom: 0px;
+ }
+ span{
+    color: tomato;
+ }
+ .trainers-heading img {
+    margin: 20px auto;
+ }
+ .trainers-heading p {
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(122, 122, 122);
+ }
+.card{
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+    justify-content: space-evenly;  
+    padding-left: 15px;
+    padding-right: 15px; 
+    margin-top: 50px;
+}
+.card-wrapper{
+    width: 370px;
+    padding: 25px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.trainer-items {
+    padding: 15px;
+}
+.trainer-content span{
+    color: tomato;
+    font-size: 500;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.trainer-content h4{
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(35, 45, 57);
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+}
+.trainer-content p{
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(122, 122, 122);
+}
+.trainer-image{
+    width: 100%;
+    border-radius: 5px;
+}
+.trainer-content ul {
+    margin-bottom: 0px;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons img{
+    margin-right: 20px;
+}
+li {
+    margin-right: 50px;
+}
+#trainers .trainer-content ul.social-icons li a {
+    color: rgb(35, 45, 57);
+    transition: all 0.3s ease 0s;
+}
+/* ..............................
+    Trainer End
+.............................. */
+/* ...............................................
+    Contact Start
+...............................................     */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.col-6 {
+    flex: 1;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.contact-form {
+    background-image: url(./assets/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+#contact {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 30px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.contact-form button {
+    background-color: tomato;
+    color: white;
+    font-size: 13px;
+    padding: 11px 17px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.input-group input {
+    flex: 1;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .col-6 {
+        max-width: 100%;
+    }
+    .input-group {
+        flex-direction: column;
+    }
+}
+/* .........................
+    Contact End
+......................... */
+footer {
+    background-color: tomato;
+    width: 100%;
+    height: 10%;
+    font-size: 13px;
+    margin: 0;
+    text-align: center;
+    padding: 2rem 0px;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 20px;
+    }
+    .nav {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav a {
+        padding: 0 10px;
+    }
+    .text1 {
+        top: 25%;
+        left: 10%;
+        text-align: center;
+    }
+    .H1 {
+        font-size: 48px;
+    }
+}
